@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Login">
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:text="E-Activity"-->
+<!--        android:textSize="50sp"/>-->
+
+    <TextView
+        android:id="@+id/txtViewLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginRight="22dp"
+        android:text="Login"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtTextEmail"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_above="@id/edtTextPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/input"
+        android:gravity="center"
+        android:hint="Masukkan Email"
+        android:inputType="textEmailAddress"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edtTextPassword"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/input"
+        android:gravity="center"
+        android:hint="Masukkan Password"
+        android:inputType="textPassword"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtTextPassword"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/reset"
+        android:text="Reset" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtTextPassword"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="65dp"
+        android:background="@drawable/button"
+        android:text="Login" />
+</RelativeLayout>

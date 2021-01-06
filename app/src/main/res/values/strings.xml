@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">E-Activity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="kepaladivisi">Kepala Divisi</string>
+    <string name="pegawaidivisi">Pegawai Divisi</string>
+    <string name="pembuat_tugas_toolstext">Pembuat Tugas :</string>
+    <string name="list_pegawai">List Pegawai :</string>
+
+    <string-array name="array_divisi">
+        <item>Informasi Publik</item>
+        <item>Aplikasi Informatika</item>
+        <item>Persandian Dan Statistik</item>
+    </string-array>
+
+    <string-array name="array_jabatan">
+        <item>Kepala Divisi</item>
+        <item>Pegawai Divisi</item>
+    </string-array>
+</resources>

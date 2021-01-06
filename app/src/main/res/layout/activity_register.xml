@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Register">
+
+    <TextView
+        android:id="@+id/txtViewLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="22dp"
+        android:text="REGISTER"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtTextNama"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_above="@id/edtTextEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/input"
+        android:hint="Nama"
+        android:inputType="textPersonName"
+        android:paddingLeft="13dp"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edtTextEmail"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@drawable/input"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="13dp"
+        android:layout_above="@id/edtTextPassword"
+        android:layout_margin="12dp"
+        android:layout_marginTop="12dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edtTextPassword"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_above="@id/spinnerDivisi"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/input"
+        android:paddingLeft="13dp"
+        android:layout_margin="12dp"
+        android:layout_marginTop="12dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/spinnerDivisi"
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="12dp" />
+
+    <Spinner
+        android:id="@+id/spinnerJabatan"
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerDivisi"
+        android:layout_margin="12dp" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="530dp"
+        android:background="@drawable/button"
+        android:text="Sign Out" />
+</RelativeLayout>
