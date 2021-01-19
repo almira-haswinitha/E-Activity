@@ -7,7 +7,7 @@ public class APIClient {
     //    10.0.2.2
 //    172.17.100.2z
 
-    public static final String BASE_URL = "http://192.168.1.10/rest-server-activity/";//http://10.0.2.2/rest-server-activity/
+    public static final String BASE_URL = "http://192.168.1.2/rest-server-activity/";//http://10.0.2.2/rest-server-activity/
     private static Retrofit retrofit;
     public static Retrofit getClient() {
         if (retrofit==null){

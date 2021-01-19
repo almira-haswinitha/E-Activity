@@ -8,9 +8,9 @@
 
     <TextView
         android:id="@+id/txtViewLogin"
-        android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_marginLeft="22dp"
         android:layout_marginTop="70dp"
         android:layout_marginRight="22dp"
@@ -19,70 +19,115 @@
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/tv_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtViewLogin"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="45dp"
+        android:text="Nama :" />
+
+
     <EditText
         android:id="@+id/edtTextNama"
         android:layout_width="350dp"
         android:layout_height="50dp"
-        android:layout_above="@id/edtTextEmail"
+        android:layout_below="@id/tv_nama"
         android:layout_centerHorizontal="true"
-        android:layout_margin="12dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="7dp"
         android:background="@drawable/input"
         android:hint="Nama"
         android:inputType="textPersonName"
         android:paddingLeft="13dp"
         android:textSize="18sp" />
 
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtTextNama"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"
+        android:text="Email :" />
+
     <EditText
         android:id="@+id/edtTextEmail"
         android:layout_width="350dp"
         android:layout_height="50dp"
-        android:background="@drawable/input"
+        android:layout_below="@id/tv_email"
         android:layout_centerHorizontal="true"
-        android:paddingLeft="13dp"
-        android:layout_above="@id/edtTextPassword"
-        android:layout_margin="12dp"
-        android:layout_marginTop="12dp"
+        android:background="@drawable/input"
         android:hint="Email"
+        android:layout_marginTop="7dp"
         android:inputType="textEmailAddress"
+        android:paddingLeft="13dp"
         android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtTextEmail"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"
+        android:text="Email :" />
 
     <EditText
         android:id="@+id/edtTextPassword"
         android:layout_width="350dp"
         android:layout_height="50dp"
-        android:layout_above="@id/spinnerDivisi"
+        android:layout_below="@id/tv_password"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
         android:background="@drawable/input"
-        android:paddingLeft="13dp"
-        android:layout_margin="12dp"
-        android:layout_marginTop="12dp"
         android:hint="Password"
         android:inputType="textPassword"
+        android:paddingLeft="13dp"
         android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/spinner_divisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtTextPassword"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"
+        android:text="Divisi :" />
 
     <Spinner
         android:id="@+id/spinnerDivisi"
         android:layout_width="350dp"
-        android:layout_centerHorizontal="true"
+        android:layout_below="@id/spinner_divisi"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_margin="12dp" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp" />
+
+    <TextView
+        android:id="@+id/spinner_jabatan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerDivisi"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"
+        android:text="Jabatan :" />
 
     <Spinner
         android:id="@+id/spinnerJabatan"
         android:layout_width="350dp"
-        android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
-        android:layout_below="@id/spinnerDivisi"
-        android:layout_margin="12dp" />
+        android:layout_below="@id/spinner_jabatan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp" />
 
     <Button
         android:id="@+id/btnRegister"
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="530dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/spinnerJabatan"
         android:background="@drawable/button"
-        android:text="Sign Out" />
+        android:text="Register" />
 </RelativeLayout>
