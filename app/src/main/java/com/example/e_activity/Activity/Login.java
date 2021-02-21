@@ -37,6 +37,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         btnLogin.setOnClickListener(this);
     }
 
+    // cek user udah login atau belum
     private void checkLoggedIn() {
         Gson gson = new Gson();
         String json = mPrefs.getString("userKey","");

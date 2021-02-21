@@ -14,6 +14,7 @@
 <!--        android:text="E-Activity"-->
 <!--        android:textSize="50sp"/>-->
 
+
     <TextView
         android:id="@+id/txtViewLogin"
         android:layout_width="wrap_content"

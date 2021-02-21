@@ -71,7 +71,7 @@
         android:layout_below="@id/edtTextEmail"
         android:layout_marginLeft="35dp"
         android:layout_marginTop="15dp"
-        android:text="Email :" />
+        android:text="Password :" />
 
     <EditText
         android:id="@+id/edtTextPassword"

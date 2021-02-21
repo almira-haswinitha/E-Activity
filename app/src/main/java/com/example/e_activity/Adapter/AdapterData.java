@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -35,6 +36,7 @@ public class AdapterData extends RecyclerView.Adapter<AdapterData.HolderData>{
     private String idTugas;
     private final ModelUser user;
     private DataModel dm;
+
     public AdapterData(Context ctx, List<DataModel> listTugas, ModelUser user) {
         ListTugas = listTugas;
         this.user = user;
@@ -126,12 +128,19 @@ public class AdapterData extends RecyclerView.Adapter<AdapterData.HolderData>{
                 public void onResponse(Call<ResponseModel> call, Response<ResponseModel> response) {
                     int kode = response.body().getKode();
                     String status = response.body().getPesan();
-                    Toast.makeText(ctx, "Kode :" +kode+"| Status : "+status, Toast.LENGTH_SHORT).show();
+
+                    Log.d("SERVER_KODE",String.valueOf(kode));
+                    Log.d("SERVER_PESAN",status);
+
+                    Toast.makeText(ctx, "Data Berhasil Dihapus", Toast.LENGTH_SHORT).show();
+
+//                    Toast.makeText(ctx, "Kode :" +kode+"| Status : "+status, Toast.LENGTH_SHORT).show();
                 }
 
                 @Override
                 public void onFailure(Call<ResponseModel> call, Throwable t) {
-                    Toast.makeText(ctx, "Gagal Menghubungi Server"+t.getMessage(), Toast.LENGTH_SHORT).show();
+                    Log.d("SERVER_PESAN","Gagal Menghubungi Server");
+//                    Toast.makeText(ctx, "Gagal Menghubungi Server"+t.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             });
         }

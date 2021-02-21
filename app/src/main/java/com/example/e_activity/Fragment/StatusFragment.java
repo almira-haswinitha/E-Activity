@@ -41,7 +41,9 @@ public class StatusFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_status, container, false);
-        mPrefs = getContext().getSharedPreferences("eactivity", Context.MODE_PRIVATE);
+
+        // mengakses dan menyimpan data
+        mPrefs = getContext().getSharedPreferences("eactivity", Context.MODE_PRIVATE); // menandakan bahwa pengaturan ini tidak dibagikan ke aplikasi lain.
         Gson gson = new Gson();
         String json = mPrefs.getString("userKey","");
         user = gson.fromJson(json, ModelUser.class);

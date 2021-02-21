@@ -124,7 +124,7 @@ public class TambahData extends AppCompatActivity implements View.OnClickListene
                         Toast.makeText(TambahData.this, response.body().getPesan(), Toast.LENGTH_LONG).show();
                         startActivity(new Intent(TambahData.this, MainActivity.class));
                         finish();
-//                pbData.setVisibility(View.INVISIBLE);
+//                      pbData.setVisibility(View.INVISIBLE);
                     }
 
                     @Override

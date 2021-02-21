@@ -21,6 +21,7 @@ public class AdapterListPegawai extends RecyclerView.Adapter<AdapterListPegawai.
         listModelUser = list;
     }
 
+//    membuat serta menginisialisasi ViewHolder dan View-nya yang diatribusikan, tetapi tidak mengisi konten tampilan
     @NonNull
     @Override
     public HolderData onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -28,6 +29,7 @@ public class AdapterListPegawai extends RecyclerView.Adapter<AdapterListPegawai.
         return new HolderData(layout);
     }
 
+//    untuk mengatribusikan ViewHolder dengan data
     @Override
     public void onBindViewHolder(@NonNull HolderData holder, int position) {
         ModelUser modelUser = listModelUser.get(position);
@@ -35,6 +37,7 @@ public class AdapterListPegawai extends RecyclerView.Adapter<AdapterListPegawai.
         holder.tvEmail.setText(modelUser.getEmail());
     }
 
+//    untuk mendapatkan ukuran set data
     @Override
     public int getItemCount() {
         return listModelUser.size();
