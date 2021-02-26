@@ -12,6 +12,7 @@ import android.view.MenuItem;
 
 import com.example.e_activity.Fragment.ListPegawaiFragment;
 import com.example.e_activity.Fragment.ProfilFragment;
+import com.example.e_activity.Fragment.RiwayatFragment;
 import com.example.e_activity.Fragment.StatusFragment;
 import com.example.e_activity.Fragment.TugasFragment;
 import com.example.e_activity.Models.ModelUser;
@@ -68,6 +69,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             switchFragment(new ProfilFragment());
         }if(item.getItemId() == R.id.susunan){
             switchFragment(new ListPegawaiFragment());
+        }else if(item.getItemId() == R.id.riwayat){
+            switchFragment(new RiwayatFragment());
         }
         return true;
     }

@@ -36,6 +36,10 @@ public interface APIRequestData {
     Call<ResponseModel> deleteTugas(@Field("id") String id);
 
     @FormUrlEncoded
+    @POST("updatepassword.php")
+    Call<ResponseModel> updatePassword(@Field("password") String password);
+
+    @FormUrlEncoded
     @POST("loginuser.php")
     Call<ResponseUser> loginUser(@Field("email") String email,
                                  @Field("password") String password);
@@ -62,5 +66,9 @@ public interface APIRequestData {
     @FormUrlEncoded
     @POST("retrievetugaspegawai.php")
     Call<ResponseModel> getTugasPegawai(@Field("email") String email);
+
+    @FormUrlEncoded
+    @POST("retrieveriwayattugas.php")
+    Call<ResponseModel> getRiwayatTugas(@Field("divisi") String divisi);
 
 }

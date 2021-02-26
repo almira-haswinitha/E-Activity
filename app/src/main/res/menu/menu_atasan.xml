@@ -5,6 +5,10 @@
         android:title="Tugas"
         android:icon="@drawable/ic_tugas"/>
     <item
+        android:id="@+id/riwayat"
+        android:title="Riwayat"
+        android:icon="@drawable/ic_status"/>
+    <item
         android:id="@+id/susunan"
         android:title="List Pegawai"
         android:icon="@drawable/ic_baseline_account"/>

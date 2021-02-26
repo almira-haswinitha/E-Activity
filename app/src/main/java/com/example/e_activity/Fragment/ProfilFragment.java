@@ -14,10 +14,11 @@ import android.widget.TextView;
 import com.example.e_activity.Activity.Login;
 import com.example.e_activity.Models.ModelUser;
 import com.example.e_activity.R;
+import com.example.e_activity.Activity.UbahPassword;
 import com.google.gson.Gson;
 
 public class ProfilFragment extends Fragment {
-    TextView nama, email, jabatan, divisi;
+    TextView nama, email, jabatan, divisi, ubahPassword;
     SharedPreferences mPrefs;
     ModelUser user;
     Button btnSignOut;
@@ -30,8 +31,16 @@ public class ProfilFragment extends Fragment {
         email = view.findViewById(R.id.email);
         divisi = view.findViewById(R.id.divisi);
         jabatan = view.findViewById(R.id.jabatan);
+        ubahPassword = view.findViewById(R.id.ubah_password);
         btnSignOut = view.findViewById(R.id.btnSignOut);
+
         init();
+
+        ubahPassword.setOnClickListener(v -> {
+            startActivity(new Intent(getActivity(), UbahPassword.class));
+            getActivity();
+        });
+
         btnSignOut.setOnClickListener(v -> {
             mPrefs.edit().remove("userKey").apply();
             startActivity(new Intent(getActivity(), Login.class));

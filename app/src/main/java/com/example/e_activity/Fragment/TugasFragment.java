@@ -66,6 +66,7 @@ public class TugasFragment extends Fragment {
         Gson gson = new Gson();
         String json = mPrefs.getString("userKey","");
         user = gson.fromJson(json, ModelUser.class);
+
         fab_add = view.findViewById(R.id.fab);
         if(String.valueOf(user.getRole()).equalsIgnoreCase("1")){
             fab_add.setVisibility(View.INVISIBLE);

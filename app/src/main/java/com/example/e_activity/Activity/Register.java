@@ -62,6 +62,7 @@ public class Register extends AppCompatActivity {
 
     private int getRoleJabatan(String jabatan) {
         int role = 0;
+
         if(jabatan.equalsIgnoreCase("Kepala Divisi")){
             role = 1;
         }else if(jabatan.equalsIgnoreCase("Pegawai Divisi")){
@@ -80,6 +81,7 @@ public class Register extends AppCompatActivity {
                 Toast.makeText(this, "Admin LoggedIn", Toast.LENGTH_LONG).show();
             }
         }
+
         nama = findViewById(R.id.edtTextNama);
         email = findViewById(R.id.edtTextEmail);
         password = findViewById(R.id.edtTextPassword);
